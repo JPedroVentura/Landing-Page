@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hamburger-menu">
+            <ul class="hamburger-items">
+                <li>
+                    <a href="#" class="fa-bounce">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <button class="close-nav" onclick="closeNav()">X</button>
+                </li>
+            </ul>
+        </div>
+        <!-- Header And Nav -->
+        <nav>
+            <div class="logo"><span class="dot">.</span>Def</div>
+            <button class="fa-solid fa-bars" id="hamburger" onclick="openNav()"></button>
+
+            <ul class="nav-itens">
+                <li>
+                    <a href="#" class="fa-bounce">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="links">
+                <i class="fa-brands fa-github git-icon"></i>
+                <i class="fa-brands fa-linkedin linkedin-icon"></i>
+                <i class="fa-brands fa-instagram instagram-icon"></i>
+                <i class="fa-brands fa-facebook facebook-icon"></i>
+            </div>
+        </nav>
+        <!-- Content -->
+        <div class="main-content">
+            <div class="form-content">
+                <div class="content">
+                    <h1>Subscrible Now</h1>
+                    <h2>To Our <span id="title"></span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime sapiente excepturi.
+                        Laudantium,
+                        aliquid rerum deleniti, nihil ad saepe, qui dolorem consequatur facilis quibusdam pariatur
+                        accusamus.
+                        Odit laborum architecto sit!</p>
+                </div>
+                <form action="" method="post">
+                    <input type="text" placeholder="Name...">
+                    <input type="email" placeholder="Your best E-mail...">
+                    <input type="button" value="Send" class="btn-send">
+                </form>
+            </div>
+            <div class="image-content">
+                <div class="banner">
+                    <img class="man" src="./imgs/man-with-laptop2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/f22d008a67.js" crossorigin="anonymous"></script>
+
+    <script>
+        var typed = new Typed('#title', {
+            strings: ['NewsLetter', 'NewsPaper', 'NewsLetter', 'NewsPaper'],
+            typeSpeed: 100,
+            showCursor: true,
+            backSpeed: 100,
+            backDelay: 700,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+</body>
+
+</html>

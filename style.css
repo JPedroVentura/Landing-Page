@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    color: rgb(239, 239, 239);
+    min-height: 100vh;
+    height: 100vh;
+    background-color: rgb(54, 57, 73);
+
+
+
+}
+
+.logo {
+    cursor: default;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.dot {
+    color: rgb(249, 214, 40);
+    ;
+}
+
+#hamburger {
+    position: relative;
+    left: 40px;
+    width: 50px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: aliceblue;
+    display: none;
+}
+
+.hamburger-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 111;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: all 0.5s;
+
+}
+
+.hamburger-items li {
+    list-style: none;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.hamburger-items li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hamburger-items .close-nav {
+    border: none;
+    width: 150px;
+    font-size: 30px;
+    font-weight: 800;
+    height: 50px;
+    color: aliceblue;
+    background: transparent;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    z-index: 111;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-around;
+}
+
+.nav-itens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-itens li {
+    cursor: pointer;
+    list-style: none;
+    text-shadow: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+}
+
+.nav-itens li a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+
+    margin: 10px;
+}
+
+.nav-itens li a:hover {
+    border-bottom: 2px solid rgb(249, 214, 40);
+    color: grey;
+}
+
+.links {
+    font-size: 25px;
+    letter-spacing: 10px;
+    cursor: pointer;
+
+}
+
+.nav-itens li a:hover,
+.git-icon,
+.linkedin-icon .facebook-icon,
+.instagram-icon {
+    transition: color 0.2s;
+}
+
+
+.git-icon:hover {
+    color: grey;
+}
+
+.linkedin-icon:hover {
+    color: grey;
+}
+
+.facebook-icon:hover {
+    color: grey;
+}
+
+.instagram-icon:hover {
+    color: grey;
+}
+
+.main-content {
+    width: 100%;
+    background-color: rgb(54, 57, 73);
+    display: flex;
+}
+
+.form-content {
+    position: relative;
+    padding: 10px;
+    left: 10px;
+    width: 60%;
+}
+
+.form-content h1 {
+    color: rgb(249, 214, 40);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.form-content h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.form-content p {
+    word-wrap: break-word;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content form input {
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.form-content .btn-send {
+    width: 50%;
+    background-color: rgb(249, 214, 40);
+}
+
+.form-content .btn-send:hover {
+    background-color: rgba(249, 214, 40, 0.493);
+}
+
+.image-content {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+.image-content .banner img {
+    width: 70%;
+}
+
+.image-content .banner .man {
+    position: absolute;
+    z-index: 100;
+    top: -50px;
+    left: 100px;
+    transform: translateY(0);
+    animation: floating 5s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 760px) {
+
+    .container .nav-itens,
+    .links {
+        display: none;
+    }
+
+    .container nav {
+        border-bottom: 2px solid  rgb(249, 214, 40);
+    }
+
+    .main-content {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .form-content {
+        position: relative;
+        margin-top: 100px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-content .btn-send {
+        width: 100%;
+        background-color: rgb(249, 214, 40);
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+    }
+
+    .main-content h2 {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .image-content {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline;
+    }
+}
